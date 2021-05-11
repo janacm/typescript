@@ -1,0 +1,42 @@
+# Yarn 2
+/.yarn/*
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
+!/.yarn/cache
+
+# Build Artifactes
+/packages/*/build
+/packages/*/builds
+/packages/*/dist
+/packages/*/temp
+
+# Mysql Docker data
+/.data/*
+
+# Original .gitignore
+.DS_Store
+/.env
+/.env.production
+/.env.razor
+/.env.ropsten
+/.env.staging
+/.env.test
+/src/api/.env
+
+.idea
+.marko.js
+builds
+data
+xlsx
+node_modules
+*.log
+*.xls*
+secrets.json
+src/frontend/public/common/blockchain/test.js
+memo.txt
+config/.env.testing
+coverage
+.history
+merkle-tree-system
+.tmp
