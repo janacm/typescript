@@ -88,24 +88,24 @@ var UsersController = /** @class */ (function (_super) {
         });
     };
     __decorate([
-        (0, tsoa_1.Get)("{userId}"),
-        __param(0, (0, tsoa_1.Path)()),
-        __param(1, (0, tsoa_1.Query)()),
+        tsoa_1.Get("{userId}"),
+        __param(0, tsoa_1.Path()),
+        __param(1, tsoa_1.Query()),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Number, String]),
         __metadata("design:returntype", Promise)
     ], UsersController.prototype, "getUser", null);
     __decorate([
-        (0, tsoa_1.SuccessResponse)("201", "Created") // Custom success response
+        tsoa_1.SuccessResponse("201", "Created") // Custom success response
         ,
-        (0, tsoa_1.Post)(),
-        __param(0, (0, tsoa_1.Body)()),
+        tsoa_1.Post(),
+        __param(0, tsoa_1.Body()),
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", Promise)
     ], UsersController.prototype, "createUser", null);
     UsersController = __decorate([
-        (0, tsoa_1.Route)("users")
+        tsoa_1.Route("users")
     ], UsersController);
     return UsersController;
 }(tsoa_1.Controller));

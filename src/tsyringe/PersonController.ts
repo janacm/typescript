@@ -3,7 +3,7 @@ import { autoInjectable } from "tsyringe";
 import { PersonService } from "./PersonService";
 
 @autoInjectable() // Injects any deps in our constructor if possible.
-export class PersonController {
+class PersonController {
     personService: PersonService;
     router: Router;
 
@@ -22,3 +22,5 @@ export class PersonController {
     }
 
 }
+
+export default PersonController;

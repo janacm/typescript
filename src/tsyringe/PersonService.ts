@@ -1,5 +1,5 @@
 import { autoInjectable } from "tsyringe";
-import { PersonRepository } from "./PersonRepository";
+import PersonRepository from "./PersonRepository";
 
 @autoInjectable()
 export class PersonService {

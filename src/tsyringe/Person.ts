@@ -3,4 +3,8 @@ export class Person {
     constructor(name: String) {
         this.name = name;
     }
+
+    getName() {
+        return this.name;
+    }
 }

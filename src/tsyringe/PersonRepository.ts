@@ -1,4 +1,4 @@
-export class PersonRepository {
+class PersonRepository {
   persons = [
     {
       id: 1,
@@ -14,3 +14,4 @@ export class PersonRepository {
     return this.persons;
   }
 }
+export default PersonRepository;
