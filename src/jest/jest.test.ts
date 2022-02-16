@@ -1,3 +1,7 @@
+import {AbstractView} from "react";
+import DateHandling from "../typescriptFeatures/DateHandling";
+import {TypeScriptBasicSyntax} from "../typescriptFeatures/TypeScriptBasicSyntax"; // Used to suppress legacy error see: https://stackoverflow.com/questions/56577201/why-is-isolatedmodules-error-fixed-by-any-import/56577324
+
 function sum(a: number,b: number,) {
     return a + b;
 }  
@@ -42,5 +46,27 @@ const b = {};
 const bound = myMock.bind(b);
 bound();
 console.log(myMock.mock.instances); // > [ <a>, <b> ]
+
+// Actual tests start
+
+describe('Typescript basic syntax tests', () => {
+    test('Do something', () => {
+        let basicSyntax = new TypeScriptBasicSyntax()
+        expect(basicSyntax.hello()).toBe("hello");
+
+    });
+});
+
+describe('DateHandling tests', () => {
+    beforeEach(() => {
+        // This happens for each tests inside this describe block
+    });
+
+    test('Do something', () => {
+        let dateHandler = new DateHandling();
+        dateHandler.testingDates()
+        expect(true).toBe(true);
+    });
+});
 
 

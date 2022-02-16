@@ -23,10 +23,10 @@ console.log('Started app.ts');
 // app.listen(port, () => console.log(`listening on port: ${port}`));
 
 
-// const d: DateHandling  = new DateHandling();
-// d.testingDates();
+const d: DateHandling = new DateHandling();
+d.testingDates();
 
-// console.log('App.ts ended.');
+console.log('App.ts ended.');
 
 
 function App() {

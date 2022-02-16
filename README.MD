@@ -10,6 +10,7 @@ This repo tracks my progress with learning Typescript, and related technologies,
 - Yarn
 - NodeJS
 - Nodemon
+- Built in WebStorm
 
 # Setup
 - Install [ts-node](https://yarnpkg.com/package/ts-node#readme)
@@ -24,6 +25,9 @@ npm install -g typescript
 npm install -g ts-node
 ```
 # To Run
+## Running Tests
+We use `jest` for tests. Run `jest.test.ts`. via WebStorm.
+## Running Frontend
 1. Run `tsc`
     - This will compile and output the Typescript files as JS into `./out`.
 2. Run `node out/app.js`
