@@ -1,16 +1,26 @@
 # Typescript Experiments
 This repo tracks my progress with learning Typescript, and related technologies, including:
 
-- Typescript features
-    - Date
-- TOAS
-- TSyringe
-- MikroORM
+## Stack
+- Typescript
+    - Date library
+- Jest tests
+- NodeJS
+- Built in WebStorm
+
+### Frontend
+- React Router
+- Typescript Open API Standard - TOAS
+
+### Backend
+- TSyringe - DI Framework
 - ExpressJS
 - Yarn
-- NodeJS
 - Nodemon
-- Built in WebStorm
+
+### My Review of this Stack
+I started this repo May 11th 2021. Since then, NextJS has exploded in popularity, and ExpressJS is decreasing in popularity. 
+I plan on continuing my experiments in a new repo: https://github.com/janacm/nextjs/ 
 
 # Setup
 - Install [ts-node](https://yarnpkg.com/package/ts-node#readme)
