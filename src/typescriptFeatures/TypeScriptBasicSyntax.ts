@@ -1,5 +1,9 @@
 export class TypeScriptBasicSyntax {
-    hello() {
-        return "hello";
-    }
+  hello() {
+    return "hello";
+  }
+
+  arrowFunction = () => {
+    return "arrowFunction";
+  };
 }

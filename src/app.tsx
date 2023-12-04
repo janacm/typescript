@@ -1,13 +1,13 @@
-import express from "express";
+// import express from "express";
 import "reflect-metadata";
 import { container } from "tsyringe";
-import  PersonController  from "./tsyringe/PersonController";
+import PersonController from "./tsyringe/PersonController";
 
 import DateHandling from "./typescriptFeatures/DateHandling";
 import React from "react";
-import Router from './router/Router'
+import Router from "./router/Router";
 
-console.log('Started app.ts');
+console.log("Started app.ts");
 
 // const port = 5000;
 // const app = express(); // TODO: Causes "Cannot Read property error"
@@ -22,12 +22,10 @@ console.log('Started app.ts');
 // app.use('/persons', personController.routes());
 // app.listen(port, () => console.log(`listening on port: ${port}`));
 
-
 const d: DateHandling = new DateHandling();
 d.testingDates();
 
-console.log('App.ts ended.');
-
+console.log("App.ts ended.");
 
 function App() {
   return <Router />;
